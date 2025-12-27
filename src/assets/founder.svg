@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Placeholder founder/team image">
+  <title>Team installing solar panels (placeholder)</title>
+  <rect width="100%" height="100%" fill="#f8fafc" />
+  <g transform="translate(40,40)">
+    <rect x="0" y="360" width="520" height="160" rx="18" fill="#e6f4ff" />
+    <circle cx="120" cy="180" r="72" fill="#fde68a" />
+    <rect x="220" y="126" width="240" height="108" rx="12" fill="#c7f9cc" />
+    <g transform="translate(40,420)">
+      <rect width="480" height="18" rx="9" fill="#e2e8f0" />
+    </g>
+  </g>
+</svg>
