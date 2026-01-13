@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -51,34 +51,38 @@ const testimonialData = [
 ];
 
 const Testimonial = () => {
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  useEffect(() => {
+    const updateSlidesToShow = () => {
+      const width = window.innerWidth;
+      if (width <= 640) {
+        setSlidesToShow(1);
+      } else if (width <= 1024) {
+        setSlidesToShow(2);
+      } else {
+        setSlidesToShow(3);
+      }
+    };
+
+    updateSlidesToShow();
+    window.addEventListener('resize', updateSlidesToShow);
+
+    return () => window.removeEventListener('resize', updateSlidesToShow);
+  }, []);
+
   var settings = {
     dots: true,
     arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
   };
   return (
     <>
