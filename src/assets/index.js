@@ -1,4 +1,5 @@
 import Logo from './afroSolar-logo.jpg'
+import Panels from './panels.jpg'
 
 // For optimal performance, create multiple sizes of banner images:
 // - about-banner-small.jpg (640px wide, ~50KB)
@@ -20,6 +21,7 @@ import ServicesXL from './services-xl.jpg'
 
 export default { 
     Logo,
+    Panels,
     Banner,
     BannerXS,
     BannerSmall, 

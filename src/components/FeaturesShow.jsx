@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 function FeaturesShow() {
   return (
@@ -18,7 +18,7 @@ function FeaturesShow() {
     <div class="mx-auto  mt-4 grid justify-center gap-4 sm:grid-cols-2 md:max-w-280 md:grid-cols-3">
 
         <article
-            className="relative overflow-hidden rounded-lg border border-gray-100 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
+            className="relative overflow-hidden rounded-lg border border-gray-600 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
                <img src='' alt="" className='' />
             <div className="flex  flex-col justify-between rounded-md p-4">
                 <div className="space-y-2">
@@ -30,7 +30,7 @@ function FeaturesShow() {
         </article>
 
         <article
-            className="relative overflow-hidden rounded-lg border border-gray-100 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
+            className="relative overflow-hidden rounded-lg border border-gray-600 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
             <div className="flex  flex-col justify-between rounded-md p-4">
                  <img src='' alt="" />
                 <div className="space-y-2">
@@ -41,7 +41,7 @@ function FeaturesShow() {
         </article>
 
         <article
-            className="relative overflow-hidden rounded-lg border border-gray-100 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
+            className="relative overflow-hidden rounded-lg border border-gray-600 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
             <div className="flex  flex-col justify-between rounded-md p-4">
                 <img src='' alt="" />
                 <div className="space-y-2">
@@ -52,7 +52,7 @@ function FeaturesShow() {
         </article>
 
         <article
-            className="relative overflow-hidden rounded-lg border border-gray-100 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
+            className="relative overflow-hidden rounded-lg border border-gray-600 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
             <div className="flex  flex-col justify-between rounded-md p-4">
             <img src='' alt="" />
                 <div className="space-y-2">
@@ -63,7 +63,7 @@ function FeaturesShow() {
         </article>
 
         <article
-            className="relative overflow-hidden rounded-lg border border-gray-100 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
+            className="relative overflow-hidden rounded-lg border border-gray-600 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
             <div className="flex  flex-col justify-between rounded-md p-4">
             <img src="" alt="" />
                 <div className="space-y-2">
@@ -74,7 +74,7 @@ function FeaturesShow() {
         </article>
 
         <article
-            className="relative overflow-hidden rounded-lg border border-gray-100 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
+            className="relative overflow-hidden rounded-lg border border-gray-600 bg-transparent select-none hover:shadow hover:shadow-blue-200 p-2">
             <div className="flex h flex-col justify-between rounded-md p-4">
              
                 <img src='' alt="" />

@@ -13,8 +13,8 @@ const Home = () => {
   return (
     <div>
       <PageHeader
-        headingStart="Our"
-        headingEnd="Products"
+        headingStart="welcome to"
+        headingEnd="AfroSolar"
         tagLine="High-quality panels, inverters, and battery storage solutions selected for performance and reliability."
         sentences={[
           "We have a wide range of genuine solar products instore ",

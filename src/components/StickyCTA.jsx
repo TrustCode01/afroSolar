@@ -4,7 +4,7 @@ import { FaPhone, FaWhatsapp, FaCommentDots } from 'react-icons/fa'
 
 const StickyCTA = ({ onOpen }) => {
   return (
-    <div className="fixed right-4 bottom-6 z-50 flex flex-col items-end gap-3">
+    <div className="fixed right-4 bottom-6 sm:bottom-10 z-50 flex flex-col items-end gap-3">
       <motion.a
         href="tel:+263781281412"
         initial={{ y: 20, opacity: 0 }}

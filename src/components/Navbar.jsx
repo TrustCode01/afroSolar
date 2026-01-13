@@ -59,7 +59,7 @@ const Navbar = ({ theme, setTheme }) => {
           >
             <a
               href="/"
-              className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 rounded px-2 py-1"
+              className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:border-b-blue-500 focus:border-offset-2 dark:focus:border-offset-gray-900 rounded px-2 py-1"
               aria-label="Afro Solar - Home"
             >
               <div className="w-15 h-15 rounded-lg flex items-center justify-center shadow-md">
@@ -107,7 +107,7 @@ const Navbar = ({ theme, setTheme }) => {
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label={contact.ariaLabel}
-                  className="p-2 text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-gray-800 rounded-full transition-all duration-200 hover:bg-blue-500 hover:text-white dark:hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+                  className="p-2 text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-gray-800 rounded-full transition-all duration-200 hover:bg-blue-500 hover:text-white dark:hover:bg-blue-600 focus:outline-none focus:border-b-2 focus:border-b-blue-500 focus:border-offset-2 dark:focus:border-offset-gray-900"
                 >
                   <Icon className="w-5 h-5" aria-hidden="true" />
                 </motion.a>

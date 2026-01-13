@@ -1,6 +1,11 @@
-import React from 'react'
 import PageHeader from '../components/PageHeader.jsx'
 import Footer from '../components/Footer'
+import Design from '../assets/design.jpg'
+import Maintanance from '../assets/maintanance.jpg'
+import Audit from '../assets/audit.jpg'
+import OffGrid from '../assets/offgrid.jpg'
+import Batteries from '../assets/batteries.jpg'
+import Testimonials from '../components/Testimonials.jsx'
 
 const Services = () => {
   const services = [
@@ -8,35 +13,35 @@ const Services = () => {
       id: 1,
       title: "Design & Installation",
       description: "Custom solar system planning and professional installation tailored to your energy needs and budget.",
-      image: "https://images.unsplash.com/photo-1559056199-641a0ac8b3f3?w=600&h=400&fit=crop",
+      image: Design,
       link: "#design-installation"
     },
     {
       id: 2,
       title: "Maintenance & Repair",
       description: "Fast diagnostics, preventative maintenance, and comprehensive warranty support for your solar system.",
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop",
+      image: Maintanance,
       link: "#maintenance-repair"
     },
     {
       id: 3,
       title: "Energy Audits",
       description: "Comprehensive energy assessments to identify savings opportunities and optimize your system performance.",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
+      image: Audit,
       link: "#energy-audits"
     },
     {
       id: 4,
       title: "Off-Grid Solutions",
       description: "Complete off-grid system design and installation for homes and businesses seeking energy independence.",
-      image: "https://images.unsplash.com/photo-1619983081563-430f63602796?w=600&h=400&fit=crop",
+      image: OffGrid,
       link: "#off-grid-solutions"
     },
     {
       id: 5,
       title: "Battery Storage",
       description: "Advanced battery storage solutions to maximize your solar energy usage and provide backup power.",
-      image: "https://images.unsplash.com/photo-1621905167918-48416bd8575a?w=600&h=400&fit=crop",
+      image: Batteries,
       link: "#battery-storage"
     },
     {
@@ -64,7 +69,7 @@ const Services = () => {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <section aria-labelledby="services-intro" className="mb-12">
           <h2 id="services-intro" className="text-3xl font-bold text-center mb-4">Our Service Offerings</h2>
-          <p className="text-center text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-center text-black max-w-2xl mx-auto">
             We provide comprehensive solar solutions designed to meet your unique energy needs. From initial consultation to ongoing maintenance, our expert team is committed to your success.
           </p>
         </section>
@@ -73,14 +78,14 @@ const Services = () => {
           {services.map((service) => (
             <article 
               key={service.id}
-              className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white dark:bg-gray-800 rounded-lg p-2 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               {/* Image Container */}
-              <div className="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700">
+              <div className="relative h-1/2 overflow-hidden bg-gray-200 dark:bg-gray-700">
                 <img 
                   src={service.image} 
                   alt={service.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
                 />
               </div>
 
@@ -108,6 +113,7 @@ const Services = () => {
             </article>
           ))}
         </section>
+        
       </main>
 
       <Footer />
